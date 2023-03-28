@@ -1,5 +1,9 @@
 def reward_function(params)
  
+# This reward function prioritizes staying on track and keeping a suitable speed for the corresponding section of the track
+# Essentially we let the model find the racing line for the track by itself through the rainforcement learning
+# This model allowed me to place 2nd Overall (1st in Section) at the QDAA AWS Deep Racer Hackathon
+
 
     if params["all_wheels_on_track"] and params["steps"] > 0:
 
